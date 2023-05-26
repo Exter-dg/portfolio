@@ -1,0 +1,35 @@
+:root {
+	--primary-color: rgb(10, 25, 47);
+	--secondary-color: rgb(100, 255, 218);
+	--text-secondary: rgb(136, 146, 176);
+	--text-primary: rgb(204, 214, 246);
+}
+
+body {
+	background-color: rgb(10, 25, 47);
+	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+		"Lucida Console", Monaco, monospace;
+	overflow: hidden;
+}
+
+.primary-button {
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+	text-transform: none !important;
+	border-color: var(--secondary-color) !important;
+	color: var(--secondary-color) !important;
+}
+
+.nav-link {
+	text-decoration: none !important;
+}
+
+.nav-link-text {
+	font-size: 13px;
+	color: var(--text-primary) !important;
+	transition: 0.2s;
+}
+
+.nav-link-text:hover {
+	color: var(--secondary-color) !important;
+}
