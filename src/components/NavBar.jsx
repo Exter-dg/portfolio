@@ -8,20 +8,16 @@ import {
 	Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const linksArr = ["About", "Experience", "Projects", "Contact"];
 
-export default function NavBar() {
+export default function NavBar({ show }) {
+	useEffect(() => {
+		console.log("Show is", show);
+	}, [show]);
 	return (
-		<AppBar
-			sx={{
-				backgroundColor: "inherit",
-				p: 1,
-				position: "sticky",
-				top: 0,
-				zIndex: 500,
-			}}>
+		<AppBar className={`nav-bar ${show && "nav-bar-hidden"}`}>
 			<Toolbar variant="dense">
 				<Box sx={{ mr: 2 }}>
 					<Typography variant="h6" noWrap>
