@@ -17,7 +17,7 @@ export default function NavBar({ show }) {
 		console.log("Show is", show);
 	}, [show]);
 	return (
-		<AppBar className={`nav-bar ${show && "nav-bar-hidden"}`}>
+		<AppBar className={`nav-bar ${!show && "nav-bar-hidden"}`}>
 			<Toolbar variant="dense">
 				<Box sx={{ mr: 2 }}>
 					<Typography variant="h6" noWrap>

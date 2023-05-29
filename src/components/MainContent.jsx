@@ -10,12 +10,12 @@ export default function MainContent({ setShow }) {
 		if (typeof boxRef.current !== "undefined") {
 			if (boxRef.current.scrollTop < lastScrollY) {
 				// if scroll down hide the navbar
-				setShow(false);
-				console.log("Setting false");
-			} else {
-				// if scroll up show the navbar
 				setShow(true);
 				console.log("Setting true");
+			} else {
+				// if scroll up show the navbar
+				setShow(false);
+				console.log("Setting false");
 			}
 			// console.log("show: ", show);
 			// remember current page location to use in the next move
