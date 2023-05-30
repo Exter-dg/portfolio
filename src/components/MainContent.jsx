@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
+import FadeInSection from "./FadeInSection";
 
 export default function MainContent({ setShow }) {
 	const [lastScrollY, setLastScrollY] = useState(0);
@@ -11,11 +12,9 @@ export default function MainContent({ setShow }) {
 			if (boxRef.current.scrollTop < lastScrollY) {
 				// if scroll down hide the navbar
 				setShow(true);
-				console.log("Setting true");
 			} else {
 				// if scroll up show the navbar
 				setShow(false);
-				console.log("Setting false");
 			}
 			// console.log("show: ", show);
 			// remember current page location to use in the next move
@@ -24,7 +23,6 @@ export default function MainContent({ setShow }) {
 	};
 
 	useEffect(() => {
-		console.log(boxRef.current);
 		if (typeof boxRef.current !== "undefined") {
 			boxRef.current.addEventListener("scroll", controlNavbar);
 
@@ -45,29 +43,55 @@ export default function MainContent({ setShow }) {
 				pt: 25,
 			}}
 			ref={boxRef}>
-			<Typography className="main-subtitle">Hello World! My name is</Typography>
-			<Typography className="title">Parth Kapadia.</Typography>
-			<Typography className="sub-title">
-				I love exploring new things!
-			</Typography>
+			<FadeInSection>
+				<Typography className="main-subtitle">
+					Hello World! My name is
+				</Typography>
+				<Typography className="title">Parth Kapadia.</Typography>
+				<Typography className="sub-title">
+					I love exploring new things!
+				</Typography>
+			</FadeInSection>
 
-			<Typography className="main-subtitle">Hello World! My name is</Typography>
-			<Typography className="title">Parth Kapadia.</Typography>
-			<Typography className="sub-title">
-				I love exploring new things!
-			</Typography>
+			<FadeInSection>
+				<Typography className="main-subtitle">
+					Hello World! My name is
+				</Typography>
+				<Typography className="title">Parth Kapadia.</Typography>
+				<Typography className="sub-title">
+					I love exploring new things!
+				</Typography>
+			</FadeInSection>
 
-			<Typography className="main-subtitle">Hello World! My name is</Typography>
-			<Typography className="title">Parth Kapadia.</Typography>
-			<Typography className="sub-title">
-				I love exploring new things!
-			</Typography>
+			<FadeInSection>
+				<Typography className="main-subtitle">
+					Hello World! My name is
+				</Typography>
+				<Typography className="title">Parth Kapadia.</Typography>
+				<Typography className="sub-title">
+					I love exploring new things!
+				</Typography>
+			</FadeInSection>
 
-			<Typography className="main-subtitle">Hello World! My name is</Typography>
-			<Typography className="title">Parth Kapadia.</Typography>
-			<Typography className="sub-title">
-				I love exploring new things!
-			</Typography>
+			<FadeInSection>
+				<Typography className="main-subtitle">
+					Hello World! My name is
+				</Typography>
+				<Typography className="title">Parth Kapadia.</Typography>
+				<Typography className="sub-title">
+					I love exploring new things!
+				</Typography>
+			</FadeInSection>
+
+			<FadeInSection>
+				<Typography className="main-subtitle">
+					Hello World! My name is
+				</Typography>
+				<Typography className="title">Parth Kapadia.</Typography>
+				<Typography className="sub-title">
+					I love exploring new things!
+				</Typography>
+			</FadeInSection>
 		</Container>
 	);
 }
