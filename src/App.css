@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: rgb(10, 25, 47);
+	background-color: var(--primary-color);
 	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
 		"Lucida Console", Monaco, monospace;
 	overflow: hidden;
@@ -28,11 +28,10 @@ body {
 }
 
 .primary-button {
-	margin-left: 1rem !important;
-	margin-right: 1rem !important;
 	text-transform: none !important;
 	border-color: var(--secondary-color) !important;
 	color: var(--secondary-color) !important;
+	font-size: medium !important;
 }
 
 .nav-link {
@@ -79,13 +78,91 @@ body {
 .title {
 	color: var(--text-primary);
 	font-weight: 800 !important;
-	font-size: 65px !important;
+	/* font-size: 65px !important; */
 }
 
 .sub-title {
 	color: var(--text-secondary);
 	font-weight: 800 !important;
-	font-size: 65px !important;
+	/* font-size: 65px !important; */
+}
+
+.section-heading {
+	color: var(--text-primary);
+	font-weight: 800 !important;
+}
+
+.text {
+	color: var(--text-secondary) !important;
+}
+
+.text-blue {
+	color: var(--secondary-color);
+}
+
+.list-item {
+	color: var(--secondary-color);
+	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+		"Lucida Console", Monaco, monospace;
+	font-size: small !important;
+}
+
+.divider {
+	border: 1px solid var(--text-secondary) !important;
+	flex-grow: 1 !important;
+	display: inline !important;
+}
+
+.profile-photo {
+	object-fit: contain !important;
+	width: 100% !important;
+	max-width: 250px !important;
+	height: auto !important;
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+
+.profile-photo-border {
+	width: 100%;
+	min-height: 100%;
+	max-width: 250px;
+	border: 2.5px solid var(--secondary-color);
+	border-radius: 2px;
+	position: absolute;
+	transition: 0.5s;
+	transform: translateX(10px) translateY(10px);
+	z-index: -1;
+}
+
+.profile-photo:hover ~ .profile-photo-border {
+	transform: translateX(15px) translateY(15px);
+}
+
+.profile-photo:hover {
+	filter: grayscale(0%);
+}
+
+.custom-link {
+	position: relative;
+	cursor: pointer;
+}
+
+.custom-link:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--secondary-color);
+	transform-origin: bottom left;
+	transition: transform 0.3s ease-in;
+}
+
+.custom-link:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }
 
 .fade-in-section {

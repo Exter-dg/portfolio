@@ -41,7 +41,7 @@ export default function NavBar({ show }) {
 					}}>
 					{linksArr.map((ele) => {
 						return (
-							<Link href={ele} key={ele} sx={{ m: 2 }} className="nav-link">
+							<Link href="#about" key={ele} sx={{ m: 2 }} className="nav-link">
 								<Typography
 									variant="h7"
 									color="white"

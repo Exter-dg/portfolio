@@ -3,7 +3,7 @@ import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import React, { useEffect, useRef, useState } from "react";
 import VerticalEmail from "./VerticalEmail";
 import VerticalLinks from "./VerticalLinks";
-import MainContent from "./MainContent";
+import Content from "./Content";
 
 export default function Body({ setShow }) {
 	return (
@@ -18,7 +18,7 @@ export default function Body({ setShow }) {
 			</Grid>
 			<Grid item sm={10} xs={12}>
 				<Box>
-					<MainContent setShow={setShow}></MainContent>
+					<Content setShow={setShow}></Content>
 				</Box>
 			</Grid>
 			<Grid
