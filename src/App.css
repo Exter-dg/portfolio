@@ -101,7 +101,6 @@ body {
 }
 
 .list-item {
-	color: var(--secondary-color);
 	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
 		"Lucida Console", Monaco, monospace;
 	font-size: small !important;
@@ -140,6 +139,54 @@ body {
 
 .profile-photo:hover {
 	filter: grayscale(0%);
+}
+
+.tabs-vertical {
+	border-left: 1px solid var(--primary-color) !important;
+	border-color: var(--text-secondary) !important;
+	min-height: 95px !important;
+	max-height: 95px !important;
+}
+
+.tabs-horizontal {
+	border-bottom: 1px solid var(--primary-color) !important;
+	border-color: var(--text-secondary) !important;
+	max-width: 180px;
+	min-width: 180px;
+}
+
+.tabs-selected-vertical {
+	background-color: var(--secondary-color) !important;
+	left: 0 !important;
+}
+
+.tabs-selected-horizontal {
+	background-color: var(--secondary-color) !important;
+	bottom: 0 !important;
+}
+
+.tab-title {
+	color: var(--text-secondary) !important;
+}
+
+.tab-title.Mui-selected {
+	color: var(--secondary-color) !important;
+}
+
+.experience-heading {
+	color: var(--text-primary);
+	font-weight: 600 !important;
+}
+
+.experience-subheading {
+	color: var(--text-secondary);
+	margin-top: 0.4rem !important;
+	font-weight: 400 !important;
+}
+
+.experience-list-item {
+	color: var(--text-secondary);
+	/* padding: 0 !important; */
 }
 
 .custom-link {

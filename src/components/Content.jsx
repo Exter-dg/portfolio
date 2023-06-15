@@ -2,6 +2,8 @@ import { Container } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import MainContent from "./MainContent";
 import AboutContent from "./AboutContent";
+import WorkedAt from "./WorkedAt";
+import OtherProjects from "./OtherProjects";
 
 export default function Content({ setShow }) {
 	const [lastScrollY, setLastScrollY] = useState(0);
@@ -41,13 +43,16 @@ export default function Content({ setShow }) {
 				overflow: "auto",
 				display: "flex",
 				flexDirection: "column",
-				rowGap: 30,
+				rowGap: { xs: 20, md: 30 },
 				pl: 5,
 				pr: 5,
 				pt: 22,
 			}}
 			ref={boxRef}>
 			<MainContent></MainContent>
+			<AboutContent></AboutContent>
+			<WorkedAt></WorkedAt>
+			<OtherProjects></OtherProjects>
 			<AboutContent></AboutContent>
 		</Container>
 	);

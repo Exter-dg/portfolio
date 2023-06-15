@@ -6,9 +6,10 @@ export default function SectionHeading({ title }) {
 		<Box
 			sx={{
 				display: "flex",
-				width: "100%",
+				width: "80%",
 				columnGap: 4,
 				alignItems: "center",
+				mb: 4,
 			}}>
 			<Typography
 				className="section-heading"
