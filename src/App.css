@@ -189,6 +189,15 @@ body {
 	/* padding: 0 !important; */
 }
 
+.project-card {
+	background-color: rgb(23, 42, 69) !important;
+	border-radius: 3px !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-between !important;
+	padding: 35px 30px !important;
+}
+
 .custom-link {
 	position: relative;
 	cursor: pointer;

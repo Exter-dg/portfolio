@@ -6,6 +6,8 @@ import FadeInSection from "./FadeInSection";
 import Grid from "@mui/material/Unstable_Grid2";
 import ProjectCard from "./ProjectCard";
 
+const projects = [];
+
 export default function OtherProjects() {
 	return (
 		<FadeInSection>
@@ -14,7 +16,7 @@ export default function OtherProjects() {
 					display: "flex",
 					alignItems: "center",
 					flexDirection: "column",
-					maxWidth: { xs: "100%", lg: "80%", xl: "70%" },
+					maxWidth: { xs: "100%", lg: "75%", xl: "80%" },
 				}}>
 				<Typography
 					className="title"
@@ -22,7 +24,7 @@ export default function OtherProjects() {
 					Other Noteworthy Projects
 				</Typography>
 				<CustomLink>View Complete List of Projects/Codes</CustomLink>
-				<Grid container width={"100%"} spacing={2} mt={5}>
+				<Grid container spacing={1} mt={5}>
 					<Grid xs={12} md={6} lg={4}>
 						<ProjectCard></ProjectCard>
 					</Grid>

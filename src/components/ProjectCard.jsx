@@ -6,16 +6,11 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import Paragraph from "./Paragraph";
 import BlueText from "./BlueText";
 
-export default function ProjectCard() {
+export default function ProjectCard({ experience }) {
 	return (
 		<Box
+			className="bounce-up project-card"
 			sx={{
-				backgroundColor: "rgb(23, 42, 69)",
-				borderRadius: "3px",
-				display: "flex",
-				flexDirection: "column",
-				justifyContent: "space-between",
-				padding: 4,
 				height: { xs: "200px", md: "250px", lg: "300px" },
 			}}>
 			<Box
