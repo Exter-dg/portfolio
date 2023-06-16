@@ -4,6 +4,7 @@ import MainContent from "./MainContent";
 import AboutContent from "./AboutContent";
 import WorkedAt from "./WorkedAt";
 import OtherProjects from "./OtherProjects";
+import GetInTouch from "./GetInTouch";
 
 export default function Content({ setShow }) {
 	const [lastScrollY, setLastScrollY] = useState(0);
@@ -53,7 +54,7 @@ export default function Content({ setShow }) {
 			<AboutContent></AboutContent>
 			<WorkedAt></WorkedAt>
 			<OtherProjects></OtherProjects>
-			<AboutContent></AboutContent>
+			<GetInTouch></GetInTouch>
 		</Container>
 	);
 }

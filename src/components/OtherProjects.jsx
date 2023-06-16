@@ -12,11 +12,9 @@ export default function OtherProjects() {
 	return (
 		<FadeInSection>
 			<Container
+				className="center-container"
 				sx={{
-					display: "flex",
-					alignItems: "center",
-					flexDirection: "column",
-					maxWidth: { xs: "100%", lg: "75%", xl: "80%" },
+					maxWidth: { xs: "100%", lg: "70%" },
 				}}>
 				<Typography
 					className="title"

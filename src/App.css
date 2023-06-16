@@ -198,6 +198,12 @@ body {
 	padding: 35px 30px !important;
 }
 
+.center-container {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+}
+
 .custom-link {
 	position: relative;
 	cursor: pointer;
