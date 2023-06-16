@@ -204,6 +204,11 @@ body {
 	align-items: center !important;
 }
 
+.footer-text {
+	color: var(--text-secondary) !important;
+	font-size: small !important;
+}
+
 .custom-link {
 	position: relative;
 	cursor: pointer;
