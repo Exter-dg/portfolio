@@ -11,7 +11,8 @@ export default function GetInTouch() {
 				className="center-container"
 				sx={{
 					maxWidth: { xs: "100%", lg: "70%" },
-				}}>
+				}}
+				id="contact">
 				<BlueText>What's Next?</BlueText>
 
 				<Typography

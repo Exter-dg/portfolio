@@ -29,7 +29,7 @@ export default function AboutContent() {
 	return (
 		<FadeInSection>
 			<Box>
-				<Box sx={{ width: { md: "55%" } }}>
+				<Box sx={{ width: { md: "55%" } }} id="about">
 					<SectionHeading title="About me"></SectionHeading>
 				</Box>
 
@@ -39,8 +39,7 @@ export default function AboutContent() {
 						flexDirection: { xs: "column", md: "row" },
 						columnGap: { md: 8, lg: 12 },
 						rowGap: 8,
-					}}
-					id="about">
+					}}>
 					<Box sx={{ flexGrow: 1, flexBasis: "60%" }}>
 						<Paragraph>
 							Hello! Interestingly, I got introduced to programming in my

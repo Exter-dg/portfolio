@@ -3,6 +3,7 @@
 	--secondary-color: rgb(100, 255, 218);
 	--text-secondary: rgb(136, 146, 176);
 	--text-primary: rgb(204, 214, 246);
+	--secondary-background: rgb(23, 42, 69);
 }
 
 body {
@@ -46,6 +47,14 @@ body {
 
 .nav-link-text:hover {
 	color: var(--secondary-color) !important;
+}
+
+.drawer {
+	background-color: var(--secondary-background) !important;
+	min-width: 75% !important;
+	display: flex !important;
+	flex-direction: column !important;
+	height: 100vh !important;
 }
 
 .vertical-email {
@@ -190,7 +199,7 @@ body {
 }
 
 .project-card {
-	background-color: rgb(23, 42, 69) !important;
+	background-color: var(--secondary-background) !important;
 	border-radius: 3px !important;
 	display: flex !important;
 	flex-direction: column !important;

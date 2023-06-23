@@ -74,7 +74,8 @@ export default function WorkedAt() {
 					marginLeft: "auto",
 					marginRight: "auto",
 					maxWidth: { lg: "70%" },
-				}}>
+				}}
+				id="experience">
 				<SectionHeading title="Where I've Worked"></SectionHeading>
 				<Box
 					sx={{

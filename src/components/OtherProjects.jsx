@@ -15,7 +15,8 @@ export default function OtherProjects() {
 				className="center-container"
 				sx={{
 					maxWidth: { xs: "100%", lg: "70%" },
-				}}>
+				}}
+				id="projects">
 				<Typography
 					className="title"
 					sx={{ fontSize: { xs: 25, md: 30, lg: 35 } }}>
