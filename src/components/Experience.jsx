@@ -50,7 +50,12 @@ export default function Experience({ experience }) {
 												</Box>
 											</BlueText>
 										</ListItemIcon>
-										<ListItemText>{text}</ListItemText>
+										<ListItemText
+											primaryTypographyProps={{
+												fontSize: { xs: "14px", sm: "15px" },
+											}}>
+											{text}
+										</ListItemText>
 									</ListItem>
 								);
 							})}

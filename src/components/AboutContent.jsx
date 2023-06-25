@@ -42,26 +42,28 @@ export default function AboutContent() {
 					}}>
 					<Box sx={{ flexGrow: 1, flexBasis: "60%" }}>
 						<Paragraph>
-							Hello! Interestingly, I got introduced to programming in my
-							freshman year at{" "}
-							<CustomLink>Institute of technology, Nirma university</CustomLink>{" "}
-							where I completed my Bachelors in Computer Science and Engineering
-							(2016-2020) with <CustomLink>86.3% aggregate</CustomLink>.
+							I hold a bachelor's degree from{" "}
+							<CustomLink href="https://nirmauni.ac.in/">
+								Institute of Technology, Nirma University
+							</CustomLink>
+							, where I achieved a GPA of 8.6. My passion for computers and
+							programming developed during my schooling days and has been a
+							driving force throughout my academic and professional journey.
 						</Paragraph>
 						<Paragraph>
-							I'm currently working as a developer for{" "}
-							<strong>Bell Canada</strong> in the Amdocs Digital Delivery unit.
-							My responsibilty includes Java/Spring based microservices
-							development &amp; testing.
+							Currently, I work as a Software Engineer at{" "}
+							<CustomLink href="https://www.searce.com">Searce</CustomLink>,
+							where I have gained valuable experience since Jan 2022.
 						</Paragraph>
 						<Paragraph>
-							I'm also an <CustomLink>Innovation Agent</CustomLink> fostering
-							the culture of creativity and innovation at Amdocs, India.
+							During my college years, I actively participated in Techinquiri,
+							organizing tech workshops to foster collaboration and
+							knowledge-sharing among students.
 						</Paragraph>
 						<Paragraph>
-							I have been awarded as Winner in Innovation Nugget, Creativity
-							Jam, Design Thinking Hackathon and Runners-Up in Project ICE Fair
-							by Amdocs.
+							Outside work, I have a keen interest in geopolitics and enjoy
+							reading about it in my free time. Additionally, I engage in table
+							tennis as a recreational activity.
 						</Paragraph>
 						<Paragraph>
 							Here is a list of the technologies that I'm familiar with!

@@ -19,10 +19,6 @@ const linksArr = [
 ];
 export default function NavBar({ show }) {
 	const [showSideBar, setShowSideBar] = useState(false);
-
-	useEffect(() => {
-		console.log("Show is", show);
-	}, [show]);
 	return (
 		<>
 			<AppBar className={`nav-bar ${!show && "nav-bar-hidden"}`}>
@@ -67,12 +63,17 @@ export default function NavBar({ show }) {
 								</Link>
 							);
 						})}
-						<Button
-							variant="outlined"
-							className="primary-button"
-							sx={{ pt: 0, pb: 0, height: "2.5rem" }}>
-							Resume
-						</Button>
+						<form
+							action="https://drive.google.com/file/d/1i0cwTAC8xw3E-AP1HLgYpETqqLab6FFm/view?usp=sharing"
+							target="_blank">
+							<Button
+								type="submit"
+								variant="outlined"
+								className="primary-button"
+								sx={{ pt: 0, pb: 0, height: "2.5rem" }}>
+								Resume
+							</Button>
+						</form>
 					</Box>
 				</Toolbar>
 			</AppBar>

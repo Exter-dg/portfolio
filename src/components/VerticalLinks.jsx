@@ -16,19 +16,23 @@ export default function VerticalLinks() {
 				alignItems: "center",
 				justifyContent: "end",
 			}}>
-			<IconButton>
+			<IconButton href="https://github.com/Exter-dg" target="_blank">
 				<GitHubIcon className="icon bounce-up" />
 			</IconButton>
-			<IconButton>
+			<IconButton href="https://twitter.com/Exter__dg" target="_blank">
 				<TwitterIcon className="icon bounce-up" />
 			</IconButton>
-			<IconButton>
+			<IconButton
+				href="https://www.linkedin.com/in/parth-kapadia14/"
+				target="_blank">
 				<LinkedInIcon className="icon bounce-up" />
 			</IconButton>
-			<IconButton>
+			<IconButton
+				href="https://www.facebook.com/parth.kapadia.9822"
+				target="_blank">
 				<FacebookIcon className="icon bounce-up" />
 			</IconButton>
-			<IconButton>
+			<IconButton href="https://www.instagram.com/Exter_dg/" target="_blank">
 				<InstagramIcon className="icon bounce-up" />
 			</IconButton>
 			<Divider

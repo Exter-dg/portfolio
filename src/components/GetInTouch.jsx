@@ -1,6 +1,6 @@
 import React from "react";
 import FadeInSection from "./FadeInSection";
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import BlueText from "./BlueText";
 import Paragraph from "./Paragraph";
 
@@ -27,12 +27,15 @@ export default function GetInTouch() {
 					about any relevant job updates.
 				</Paragraph>
 
-				<Button
-					variant="outlined"
-					className="primary-button"
-					sx={{ mt: 7, height: "2.5rem", p: 3, ml: 0 }}>
-					Mail me
-				</Button>
+				<form action="mailto:parthrkapadia@gmail.com" target="_blank">
+					<Button
+						type="submit"
+						variant="outlined"
+						className="primary-button"
+						sx={{ mt: 7, height: "2.5rem", p: 3, ml: 0 }}>
+						Mail me
+					</Button>
+				</form>
 			</Container>
 		</FadeInSection>
 	);

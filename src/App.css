@@ -203,7 +203,7 @@ body {
 	border-radius: 3px !important;
 	display: flex !important;
 	flex-direction: column !important;
-	justify-content: space-between !important;
+	/* justify-content: space-between !important; */
 	padding: 35px 30px !important;
 }
 
@@ -221,6 +221,7 @@ body {
 .custom-link {
 	position: relative;
 	cursor: pointer;
+	white-space: pre-wrap !important;
 }
 
 .custom-link:after {
@@ -252,4 +253,9 @@ body {
 	opacity: 1;
 	transform: none;
 	/* visibility: visible; */
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+	display: none;
 }

@@ -11,7 +11,7 @@ export default function ProjectCard({ experience }) {
 		<Box
 			className="bounce-up project-card"
 			sx={{
-				height: { xs: "200px", md: "250px", lg: "300px" },
+				height: { xs: "200px", md: "250px", lg: "320px" },
 			}}>
 			<Box
 				sx={{
@@ -26,36 +26,51 @@ export default function ProjectCard({ experience }) {
 				<Box
 					sx={{
 						display: "flex",
-						justifyContent: "space-between",
+						justifyContent: experience.demo ? "space-between" : "end",
 						width: "60px",
 						color: "var(--text-secondary)",
 					}}>
 					<a
-						href="https://www.github.com"
+						href={experience.github}
 						style={{ color: "inherit" }}
 						target="_blank"
 						rel="noreferrer">
 						<GitHubIcon></GitHubIcon>
 					</a>
-					<a
-						href="www.github.com"
-						style={{ color: "inherit" }}
-						target="_blank"
-						rel="noreferrer">
-						<LaunchIcon></LaunchIcon>
-					</a>
+					{experience.demo && (
+						<a
+							href={experience.demo}
+							style={{ color: "inherit" }}
+							target="_blank"
+							rel="noreferrer">
+							<LaunchIcon></LaunchIcon>
+						</a>
+					)}
 				</Box>
 			</Box>
-			<Box>
-				<Typography className="experience-heading" sx={{ fontSize: "20px" }}>
-					Kubernetes Engine
-				</Typography>
-				<Paragraph>
-					Collection of small code gists along my Golang learning journey
-				</Paragraph>
-			</Box>
-			<Box>
-				<BlueText>Java, Microservices</BlueText>
+			<Box
+				mt={4}
+				sx={{
+					flexGrow: 1,
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "space-between",
+				}}>
+				<Box>
+					<Typography className="experience-heading">
+						{experience.name}
+					</Typography>
+					<Paragraph sx={{ fontSize: { xs: "14px", md: "15px" } }}>
+						{experience.summary}
+					</Paragraph>
+				</Box>
+				<Box
+					sx={{
+						fontSize: { xs: "14px", md: "15px" },
+						justifySelf: "start",
+					}}>
+					<BlueText>{experience.tech}</BlueText>
+				</Box>
 			</Box>
 		</Box>
 	);

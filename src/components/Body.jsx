@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import VerticalEmail from "./VerticalEmail";
 import VerticalLinks from "./VerticalLinks";
 import Content from "./Content";

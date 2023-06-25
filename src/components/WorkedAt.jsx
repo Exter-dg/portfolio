@@ -27,8 +27,10 @@ const experience = [
 			link: "https://www.searce.com",
 			time: "July 2022 - Present",
 			work: [
-				"Responsible for code development, UAT support, automation of Bell Canada NM1-RTB customisation project as part of Digital Delivery scrum team. (Oct 2021 - present)",
-				"Part of Walk-the-Tech Go team of 10 developers building a microservice in Go language. Tech stack includes Couchbase, Go echo framework, REST APIs implementation, JMeter and Postman for testing purposes.",
+				"Full-Stack Web Application: Developed a workspace admin portal for user-detail synchronization across domains using NodeJS, ReactJS, and Google APIs (Gmail, Calendar, Drive).",
+				"Google Meet Chrome Extension: Built a JavaScript-based Chrome extension for real-time transcription and automatic storage of meeting minutes during Google Meet sessions.",
+				"Text Extraction - PDF: Developed a CLI-based application in NodeJS for extracting text from PDFs. Implemented advanced indexing techniques for efficient search and retrieval, including features like proximity search for accurate results.",
+				"End-to-End MLOps Pipeline: Worked on Vertex AI to create a comprehensive MLOps pipeline for a major US bank, incorporating hyperparameter tuning, model versioning, model monitoring, and scheduling features.",
 			],
 		},
 		2: {
@@ -36,16 +38,24 @@ const experience = [
 			company: "Searce",
 			link: "https://www.searce.com",
 			time: "Jan 2022 - July 2022",
-			work: [],
+			work: [
+				"Chatbot Development: Led the development of a chatbot for a major IT client, utilizing Dialogflow ES and Cloud Functions to enable API calls and enhance functionality.",
+				"Custom Webhook and Retry Logic: Developed a custom webhook for Dialogflow ES, enabling the implementation of Retry-logic within the chatbot for improved user experience and error handling.",
+				"POC Conversational Bots: Created proof-of-concept conversational bots using Dialogflow ES and Dialogflow CX, leveraging NLP-based techniques to deliver interactive and engaging user experiences.",
+			],
 		},
 	},
 	{
 		1: {
 			title: "Student Developer",
 			company: "Xapian Search Engine Library - Google Summer of Code",
-			link: "https://www.searce.com",
+			link: "https://www.xapian.org",
 			time: "Apr 2020 - Aug 2020",
-			work: [],
+			work: [
+				"Text Extraction Enhancement: Extended the capabilities of Xapian's Omega by integrating text and metadata extraction from diverse file formats, improving the library's functionality and versatility.",
+				"File Format Support: Integrated libraries such as libextractor, libarchive, and libabw to enable support for various file formats within Omega, enhancing the library's ability to handle a wide range of content.",
+				"Testcase System Implementation: Developed a new testcase system within Omega, enabling efficient testing and enhancing the reliability of the software, ensuring its stability and robustness.",
+			],
 		},
 	},
 ];
