@@ -11,7 +11,7 @@ export default function ProjectCard({ experience }) {
 		<Box
 			className="bounce-up project-card"
 			sx={{
-				height: { xs: "200px", md: "250px", lg: "320px" },
+				height: { xs: "300px", md: "250px", lg: "320px" },
 			}}>
 			<Box
 				sx={{
