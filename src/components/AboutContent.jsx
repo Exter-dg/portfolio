@@ -63,7 +63,15 @@ export default function AboutContent() {
 						<Paragraph>
 							Outside work, I have a keen interest in geopolitics and enjoy
 							reading about it in my free time. Additionally, I engage in table
-							tennis as a recreational activity.
+							tennis as a recreational activity. I also regularly contribute to
+							open source projects and have contributions in projects like{" "}
+							<CustomLink href="https://github.com/xapian/xapian/commits?author=Exter-dg">
+								Xapian
+							</CustomLink>{" "}
+							and{" "}
+							<CustomLink href="https://github.com/googleworkspace/node-samples/issues/378">
+								Google Workspace
+							</CustomLink>
 						</Paragraph>
 						<Paragraph>
 							Here is a list of the technologies that I'm familiar with!
