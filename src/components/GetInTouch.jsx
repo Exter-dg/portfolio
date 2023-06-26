@@ -14,20 +14,20 @@ export default function GetInTouch() {
 				}}
 				id="contact">
 				<BlueText>What's Next?</BlueText>
-
 				<Typography
 					className="experience-heading"
 					sx={{ fontSize: { xs: 25, md: 30, lg: 35 } }}>
 					Get In Touch
 				</Typography>
-
 				<Paragraph sx={{ textAlign: "center" }}>
 					My inbox is always open. Whether you have a question or just want to
 					say hello, I'll try my best to get back to you! Feel free to mail me
 					about any relevant job updates.
 				</Paragraph>
-
-				<form action="mailto:parthrkapadia@gmail.com" target="_blank">
+				<a
+					href="mailto:parthrkapadia@gmail.com"
+					target="_blank"
+					rel="noreferrer">
 					<Button
 						type="submit"
 						variant="outlined"
@@ -35,7 +35,7 @@ export default function GetInTouch() {
 						sx={{ mt: 7, height: "2.5rem", p: 3, ml: 0 }}>
 						Mail me
 					</Button>
-				</form>
+				</a>
 			</Container>
 		</FadeInSection>
 	);

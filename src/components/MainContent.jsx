@@ -40,7 +40,10 @@ export default function MainContent() {
 					using React.
 				</Paragraph>
 
-				<form action="mailto:parthrkapadia@gmail.com" target="_blank">
+				<a
+					href="mailto:parthrkapadia@gmail.com"
+					target="_blank"
+					rel="noreferrer">
 					<Button
 						type="submit"
 						variant="outlined"
@@ -48,7 +51,7 @@ export default function MainContent() {
 						sx={{ mt: 7, height: "2.5rem", p: 3, ml: 0 }}>
 						Contact me
 					</Button>
-				</form>
+				</a>
 			</Box>
 		</FadeInSection>
 	);
