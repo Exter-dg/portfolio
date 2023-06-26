@@ -1,9 +1,10 @@
-import { Box, Divider, IconButton, Typography } from "@mui/material";
+import { Box, Divider, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import StackoverflowIcon from "../assets/stack-overflow.svg";
 import React from "react";
 
 export default function VerticalLinks() {
@@ -16,6 +17,16 @@ export default function VerticalLinks() {
 				alignItems: "center",
 				justifyContent: "end",
 			}}>
+			<IconButton
+				href="https://stackoverflow.com/users/10217754/parth-kapadia"
+				target="_blank">
+				<img
+					src={StackoverflowIcon}
+					className="svg-icon-blue bounce-up"
+					height={27}
+					width={27}
+					alt="stackoverflow"></img>
+			</IconButton>
 			<IconButton href="https://github.com/Exter-dg" target="_blank">
 				<GitHubIcon className="icon bounce-up" />
 			</IconButton>
