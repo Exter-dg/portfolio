@@ -3,7 +3,7 @@ import { useState, createContext, useEffect } from "react";
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-	const [theme, setTheme] = useState();
+	const [theme, setTheme] = useState("dark");
 	const darkTheme = {
 		"--primary-color": "rgb(10, 25, 47)",
 		"--secondary-color": "rgb(100, 255, 218)",
