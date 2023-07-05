@@ -14,7 +14,7 @@ body {
 }
 
 .nav-bar {
-	background-color: rgb(10, 25, 47) !important;
+	background-color: var(--primary-color) !important;
 	padding: 7px !important;
 	position: fixed !important;
 	top: 0 !important;
@@ -22,7 +22,7 @@ body {
 }
 
 .nav-bar-hidden {
-	background-color: rgb(10, 25, 47) !important;
+	background-color: var(--primary-color) !important;
 	padding: 7px !important;
 	position: fixed !important;
 	top: -62px !important;
@@ -83,6 +83,11 @@ body {
 .svg-icon-blue {
 	filter: invert(87%) sepia(13%) saturate(1643%) hue-rotate(95deg)
 		brightness(112%) contrast(100%) !important;
+}
+
+.svg-icon-black {
+	filter: invert(0%) sepia(0%) saturate(37%) hue-rotate(147deg) brightness(96%)
+		contrast(100%);
 }
 
 .main-subtitle {

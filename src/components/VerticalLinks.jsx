@@ -5,9 +5,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import StackoverflowIcon from "../assets/stack-overflow.svg";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeProvider";
 
 export default function VerticalLinks() {
+	const { theme } = useContext(ThemeContext);
 	return (
 		<Box
 			sx={{
@@ -22,7 +24,10 @@ export default function VerticalLinks() {
 				target="_blank">
 				<img
 					src={StackoverflowIcon}
-					className="svg-icon-blue bounce-up"
+					className={
+						(theme === "dark" ? "svg-icon-blue" : "svg-icon-black") +
+						" bounce-up"
+					}
 					height={27}
 					width={27}
 					alt="stackoverflow"></img>
