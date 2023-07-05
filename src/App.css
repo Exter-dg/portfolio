@@ -80,6 +80,10 @@ body {
 	margin-bottom: 5px !important;
 }
 
+.icon-button:hover {
+	background-color: inherit !important;
+}
+
 .svg-icon-blue {
 	filter: invert(87%) sepia(13%) saturate(1643%) hue-rotate(95deg)
 		brightness(112%) contrast(100%) !important;

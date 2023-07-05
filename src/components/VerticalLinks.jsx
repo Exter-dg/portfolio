@@ -21,7 +21,8 @@ export default function VerticalLinks() {
 			}}>
 			<IconButton
 				href="https://stackoverflow.com/users/10217754/parth-kapadia"
-				target="_blank">
+				target="_blank"
+				className="icon-button">
 				<img
 					src={StackoverflowIcon}
 					className={
@@ -32,23 +33,34 @@ export default function VerticalLinks() {
 					width={27}
 					alt="stackoverflow"></img>
 			</IconButton>
-			<IconButton href="https://github.com/Exter-dg" target="_blank">
+			<IconButton
+				href="https://github.com/Exter-dg"
+				target="_blank"
+				className="icon-button">
 				<GitHubIcon className="icon bounce-up" />
 			</IconButton>
-			<IconButton href="https://twitter.com/Exter__dg" target="_blank">
+			<IconButton
+				href="https://twitter.com/Exter__dg"
+				target="_blank"
+				className="icon-button">
 				<TwitterIcon className="icon bounce-up" />
 			</IconButton>
 			<IconButton
 				href="https://www.linkedin.com/in/parth-kapadia14/"
-				target="_blank">
+				target="_blank"
+				className="icon-button">
 				<LinkedInIcon className="icon bounce-up" />
 			</IconButton>
 			<IconButton
 				href="https://www.facebook.com/parth.kapadia.9822"
-				target="_blank">
+				target="_blank"
+				className="icon-button">
 				<FacebookIcon className="icon bounce-up" />
 			</IconButton>
-			<IconButton href="https://www.instagram.com/Exter_dg/" target="_blank">
+			<IconButton
+				href="https://www.instagram.com/Exter_dg/"
+				target="_blank"
+				className="icon-button">
 				<InstagramIcon className="icon bounce-up" />
 			</IconButton>
 			<Divider
