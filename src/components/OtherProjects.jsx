@@ -29,6 +29,14 @@ const projects = [
 		tech: "React JS, Material UI",
 	},
 	{
+		name: "Vintage Snake Game",
+		github: "https://github.com/Exter-dg/snake_game",
+		demo: "https://exter-dg.github.io/snake_game/",
+		summary:
+			"Check out my version of the classic snake game in the Github repository. Take a look and let me know your thoughts!",
+		tech: "React JS, Javascript",
+	},
+	{
 		name: "PDF Search Engine",
 		github: "https://github.com/Exter-dg/searchEngine2",
 		demo: "https://www.awesomescreenshot.com/video/15973020?key=711ade5625df9a645c3fa98ef3aada0e",
@@ -57,13 +65,7 @@ const projects = [
 		summary: "A web-based expense tracker made using ReactJS and Firebase",
 		tech: "React, Firestore, Firebase Auth",
 	},
-	{
-		name: "Verifi",
-		github: "https://github.com/Exter-dg/verifi_dapp",
-		summary:
-			"A decentralized Counterfeit-Prevention system based on Smart Contracts and the Ethereum Blockchain",
-		tech: "Solidity, React",
-	},
+
 	{
 		name: "MUI Responsive Blog",
 		github: "https://github.com/Exter-dg/MUIBlogResponsive",
@@ -72,6 +74,16 @@ const projects = [
 		tech: "React JS, Material UI",
 	},
 ];
+
+/*
+{
+		name: "Verifi",
+		github: "https://github.com/Exter-dg/verifi_dapp",
+		summary:
+			"A decentralized Counterfeit-Prevention system based on Smart Contracts and the Ethereum Blockchain",
+		tech: "Solidity, React",
+	},
+*/
 
 export default function OtherProjects() {
 	return (
