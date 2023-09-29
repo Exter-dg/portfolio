@@ -3,7 +3,6 @@ import FadeInSection from "./FadeInSection";
 import { Box, List, ListItem, ListItemAvatar } from "@mui/material";
 import SectionHeading from "./SectionHeading";
 import Paragraph from "./Paragraph";
-import BlueText from "./BlueText";
 import CustomLink from "./CustomLink";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import ProfilePhoto from "../assets/profile_photo1.png";
